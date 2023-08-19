@@ -1,4 +1,3 @@
-<script defer src="https://pyscript.net/latest/pyscript.js"></script>
 const textInput = document.getElementById('textInput');
 const speakButton = document.getElementById('speakButton');
 const outputDiv = document.getElementById('output');
@@ -18,17 +17,7 @@ if ('speechSynthesis' in window) {
             };
 
             // 음성 출력 시작
-            var outputDiv = document.getElementById('output');
-            outputDiv.innerHTML = '';
-        
-            var pythonCode = `
-                print("hello")
-            `;
-        
-            brython({debug: 1, indexedDB: true}).run_script_string(pythonCode, function(result) {
-                outputDiv.innerHTML = result;
-            });
-            // synth.speak(utterance);
+            synth.speak(utterance);
         } else {
             outputDiv.innerHTML = '입력된 글자가 없습니다.';
         }
