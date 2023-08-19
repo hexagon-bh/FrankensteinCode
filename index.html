@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>음성 출력 웹</title>
+    <title>말하기와 카메라 웹 페이지</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <input type="text" id="textInput" placeholder="말할 글자 입력">
+    <h1>말하기와 카메라 웹 페이지</h1>
+    <input type="text" id="textInput" placeholder="말할 내용을 입력하세요">
     <button id="speakButton">Speak</button>
-    <div id="output"></div>
+    <button id="cameraButton">카메라</button>
+    <p id="output"></p>
+    <video id="cameraView" autoplay></video>
+
     <script src="script.js"></script>
 </body>
 </html>
