@@ -4,6 +4,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
+    background-image: url('368562826_939721650458730_440300964895764264_n.jpg');
+    background-size: cover; /* 이미지를 화면에 맞게 조절 */
+    background-repeat: no-repeat; /* 이미지 반복 방지 */
 }
 
 .container {
