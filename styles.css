@@ -1,7 +1,7 @@
 /* 기본 스타일 */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
+    margin: center;
     padding: 0;
     background-color: #f0f0f0;
     background-image: url('368562826_939721650458730_440300964895764264_n.jpg');
@@ -11,7 +11,9 @@ body {
 
 .container {
     max-width: 800px;
-    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
@@ -31,12 +33,21 @@ h1 {
 }
 
 input[type="text"] {
-    flex: 1;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    float:left;
 }
-
+.image_container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.put_container{
+    display: flex;
+    justify-content: center;
+    gap:10px;
+}
 button {
     padding: 10px 20px;
     background-color: #007bff;
@@ -45,17 +56,37 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
-
 button:hover {
     background-color: #0056b3;
 }
-
+.video_container{
+    display: flex;
+    justify-content: center;
+}
 #cameraView {
-    width: 100%;
     max-height: 300px;
     border-radius: 5px;
+    margin-bottom: 30px;
+    outline: 2px solid black;
 }
 
 #output {
     margin-top: 10px;
+}
+.download_container{
+    display: flex;
+    justify-content: center;
+}
+.download-button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.download-button:hover {
+    background-color: #2980b9;
 }
